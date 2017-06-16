@@ -29,8 +29,15 @@ Carousel.prototype = {
   },
 
   bindEvents: function() {
-    this.$btnPrev.on('click', this.previous.bind(this));
-    this.$btnNext.on('click', this.next.bind(this));
+    this.$btnPrev.on('click', function(){
+      //remove pointer events from buttons
+      this.$btnPrev.addClass('no-pointer-events')
+      this.previous.bind(this)()
+    }.bind(this));
+    this.$btnNext.on('click', function(){
+      this.$btnNext.addClass('no-pointer-events')
+      this.next.bind(this)()
+    }.bind(this));
   },
 
   getAvailableItems: function(direction) {
@@ -121,7 +128,11 @@ Carousel.prototype = {
       delay += 100;
     })
 
-
+    //re-allow pointer events on next/prev buttons AFTER transition as completed
+    setTimeout(function(){
+      this.$btnNext.removeClass('no-pointer-events');
+      this.$btnPrev.removeClass('no-pointer-events');
+    }.bind(this), delay + 250)
 
     this.position += availableItems * direction;
   }

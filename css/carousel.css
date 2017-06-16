@@ -24,6 +24,9 @@
   position: relative;
 }
 
+.no-pointer-events {
+  pointer-events: none;
+}
 /*.carousel-wrapper::before, .carousel-wrapper::after {
   content: '';
   position: absolute;

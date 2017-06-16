@@ -38,5 +38,5 @@ Right now the hover effect on individual items is very subtle, but we want somet
 <!--### Items should animate individually
 The designer wanted something where, when the slides move on/off screen, they don't all move at once - instead, they should be slightly out of sync, like a toy train being pulled.-->
 
-### User should not be able to advance slideshow while it's animating
-Once you have the slideshow animating, we need to make sure that clicking the arrow DURING animation doesn't cause an event pileup. Prevent clicks during this time.
+<!--### User should not be able to advance slideshow while it's animating
+Once you have the slideshow animating, we need to make sure that clicking the arrow DURING animation doesn't cause an event pileup. Prevent clicks during this time.-->
