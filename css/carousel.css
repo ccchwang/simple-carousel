@@ -68,7 +68,7 @@
   vertical-align: top;
   width: 156px;
   left: 0;
-  transition: 0.4s left ease-in-out
+  transition: 0.4s left cubic-bezier(.77,0,.17,1)
 }
 
 .carousel-item p {
