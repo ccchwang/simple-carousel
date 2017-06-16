@@ -1,0 +1,44 @@
+a {
+  display: block;
+}
+.gallery-still {
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.gallery-still > img {
+  display: block;
+}
+
+.gallery-still-label,
+.gallery-still-featured {
+  bottom: 0;
+  color: #fff;
+  font-weight: normal;
+  left: 0;
+  position: absolute;
+}
+
+.gallery-still-label {
+  background: #759e26;
+  font-size: 14px;
+  min-width: 30px;
+  padding: 0.2em 0.4em 0.1em;
+}
+
+.gallery-still-label .icon {
+  padding-left: 0.4em;
+}
+
+.gallery-still-featured {
+  background: rgba(0, 0, 0, 0.7);
+  display: table;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.gallery-still-desc {
+  display: none;
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/carousel.css">
+  </head>
+  <body>
+
+    <div class="carousel carousel-init">
+
+      <h2 class="carousel-header b-light">Related Slideshows</h2>
+
+      <div class="carousel-wrapper">
+
+        <div class="carousel-viewport">
+
+          <ul class="carousel-content">
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    9<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>Four-day food festival in Durham</p>
+              </a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    21<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>Free ice cream, toothpaste for shoppers this week</p>
+              </a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    3<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>Search, rescue, recovery continue in Oklahoma</p>
+              </a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    12<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>Passions high around school voucher bill</p>
+              </a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    8<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>World stock rises ahead of Fed statement</p>
+              </a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    11<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>Senate Committee discusses budget bill</p>
+              </a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    3<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>Search, rescue, recovery</p>
+              </a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    12<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>Passions high around school voucher bill</p>
+              </a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="/slideshow.html">
+                <span class="gallery-still">
+                  <img alt="" height="117" width="156" src="http://placekitten.com/156/117">
+                  <span class="gallery-still-label">
+                    8<span class="icon icon-ico-slideshow"></span><span class="gallery-still-desc"> Images</span>
+                  </span>
+                </span>
+                <p>World stock rises ahead of Fed statement</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="carousel-nav">
+          <li>
+            <button class="btn-link carousel-nav-previous">
+              <span class="icon icon-ico-arrow-l"></span>
+              <span class="carousel-nav-text">Previous</span>
+            </button>
+          </li>
+          <li>
+            <button class="btn-link carousel-nav-next">
+              <span class="icon icon-ico-arrow-r"></span>
+              <span class="carousel-nav-text">Next</span>
+            </button>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/carousel.js"></script>
+    <script>
+
+      // select carousels on the page and init
+      $('.carousel').each(function() {
+        new Carousel(this);
+      });
+    </script>
+
+  </body>
+</html>
